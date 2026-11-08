@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carbono Circular · Do resíduo à receita</title>
-<meta name="description" content="Serviço da ArkheAnanda. Transformamos resíduo em composto premium, derivados e ativos de carbono.">
+<title>Carbono Circular · Do resíduo ao solo fértil</title>
+<meta name="description" content="Serviço da ArkheAnanda. Destinamos resíduos e produzimos insumos que devolvem carbono e minerais ao solo.">
 <style>
   :root {
     --preto: #141414;
@@ -30,7 +30,6 @@
   .container { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
   section { padding: 96px 0; }
   section.alt { background: var(--off); }
-  section.escuro { background: var(--preto); color: var(--branco); }
 
   header { border-bottom: 1px solid var(--linha); position: sticky; top: 0; background: rgba(255,255,255,0.96); backdrop-filter: blur(8px); z-index: 10; }
   .nav { display: flex; align-items: center; justify-content: space-between; padding: 18px 28px; }
@@ -39,23 +38,18 @@
   .nav-links a { text-decoration: none; color: var(--cinza); letter-spacing: 0.01em; }
   .nav-links a:hover { color: var(--preto); }
 
-  .eyebrow { font-family: var(--sans); font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--cinza); margin-bottom: 28px; }
-  .escuro .eyebrow { color: #9a9a96; }
+  .eyebrow { font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--cinza); margin-bottom: 28px; }
   h1 { font-family: var(--serif); font-size: clamp(2.6rem, 6vw, 4.2rem); font-weight: normal; line-height: 1.08; letter-spacing: -0.01em; margin-bottom: 28px; }
   h2 { font-family: var(--serif); font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: normal; line-height: 1.18; letter-spacing: -0.01em; margin-bottom: 22px; }
   h3 { font-family: var(--serif); font-size: 1.25rem; font-weight: bold; margin-bottom: 12px; }
-  .lead { font-size: 1.18rem; color: var(--cinza); max-width: 640px; margin-bottom: 36px; }
-  .escuro .lead { color: #b5b5b0; }
+  .lead { font-size: 1.18rem; color: var(--cinza); max-width: 660px; margin-bottom: 36px; }
   p { color: var(--cinza); margin-bottom: 16px; }
-  .escuro p { color: #b5b5b0; }
   .btn {
     display: inline-block; border: 1px solid var(--preto); padding: 14px 32px;
     text-decoration: none; font-size: 0.9rem; letter-spacing: 0.02em; font-weight: 500;
     transition: background 0.2s, color 0.2s;
   }
   .btn:hover { background: var(--preto); color: var(--branco); }
-  .btn.claro { border-color: var(--branco); color: var(--branco); }
-  .btn.claro:hover { background: var(--branco); color: var(--preto); }
 
   .hero { padding: 112px 0 96px; }
   .hero-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 56px; align-items: center; }
@@ -66,34 +60,14 @@
 
   .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
   .card { padding: 32px; background: var(--branco); border: 1px solid var(--linha); }
-  .alt .card { background: var(--branco); }
-  .card .num { font-family: var(--sans); font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--cinza-claro); margin-bottom: 16px; }
+  .card .num { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--cinza-claro); margin-bottom: 16px; }
 
-  .escada { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 36px; }
-  .degrau { border-top: 2px solid var(--preto); padding: 20px 0 0; position: relative; }
-  .degrau .n { font-family: var(--sans); font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--cinza-claro); margin-bottom: 12px; }
-  .degrau b { font-family: var(--serif); display: block; font-size: 1.15rem; margin-bottom: 8px; }
-  .degrau span { font-size: 0.88rem; color: var(--cinza); }
-  .degrau.destaque { background: var(--preto); color: var(--branco); border-top-color: var(--preto); padding: 20px; margin-top: -20px; }
-  .degrau.destaque b { color: var(--branco); }
-  .degrau.destaque span { color: #b5b5b0; }
-
-  .fluxo { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-top: 36px; }
-  .etapa { border-top: 2px solid var(--preto); padding-top: 16px; font-size: 0.9rem; color: var(--cinza); }
-  .etapa b { display: block; font-family: var(--serif); color: var(--preto); margin-bottom: 6px; font-size: 1.02rem; }
-
-  .ecossistema { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 36px; }
-  .unidade { border-left: 2px solid var(--branco); padding-left: 18px; }
-  .unidade b { display: block; font-family: var(--serif); margin-bottom: 8px; font-size: 1.05rem; color: var(--branco); }
-  .unidade span { font-size: 0.86rem; color: #b5b5b0; }
-
-  .carbon-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 40px; }
-  .carbon-strip .item { border-top: 1px solid #3a3a37; padding-top: 18px; }
-  .carbon-strip .item b { font-family: var(--serif); display: block; color: var(--branco); font-size: 1.05rem; margin-bottom: 8px; }
-  .carbon-strip .item span { color: #b5b5b0; font-size: 0.9rem; }
+  .grupo { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 36px; }
+  .unidade { border-left: 2px solid var(--preto); padding-left: 18px; }
+  .unidade b { display: block; font-family: var(--serif); margin-bottom: 8px; font-size: 1.05rem; }
+  .unidade span { font-size: 0.86rem; color: var(--cinza); }
 
   .contato-bloco { margin-top: 32px; font-size: 1rem; color: var(--cinza); }
-  .contato-bloco a { color: var(--preto); text-decoration: underline; }
 
   footer { padding: 56px 0; border-top: 1px solid var(--linha); font-size: 0.85rem; color: var(--cinza); }
   footer .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 18px; }
@@ -101,7 +75,7 @@
   @media (max-width: 900px) {
     .hero-grid { grid-template-columns: 1fr; }
     .hero-aside { border-left: none; border-top: 2px solid var(--preto); padding-left: 0; padding-top: 24px; }
-    .grid, .escada, .fluxo, .ecossistema, .carbon-strip { grid-template-columns: 1fr; }
+    .grid, .grupo { grid-template-columns: 1fr; }
     .nav-links { display: none; }
     section { padding: 64px 0; }
   }
@@ -113,10 +87,10 @@
   <div class="container nav">
     <div class="logo">Carbono Circular</div>
     <nav class="nav-links">
-      <a href="#porque">Por que</a>
-      <a href="#abase">A base</a>
-      <a href="#escada">A escada</a>
-      <a href="#carbono">Carbono</a>
+      <a href="#oque">O que fazemos</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#paraque">Para quem</a>
+      <a href="#quemsomos">Quem somos</a>
       <a href="#contato">Contato</a>
     </nav>
   </div>
@@ -126,145 +100,110 @@
   <div class="container">
     <div class="hero-grid">
       <div>
-        <div class="eyebrow">Serviço da ArkheAnanda · Bioeconomia Circular</div>
-        <h1>Do resíduo à receita.</h1>
-        <p class="lead">Transformamos resíduo em composto premium, derivados e ativos de carbono. Receita rápida na base, valor de longo prazo na camada de carbono.</p>
+        <div class="eyebrow">Serviço da ArkheAnanda</div>
+        <h1>Do resíduo ao solo fértil.</h1>
+        <p class="lead">Destinamos resíduos com responsabilidade e produzimos insumos que devolvem carbono e minerais ao solo, para uma agricultura mais produtiva e sustentável.</p>
         <a class="btn" href="#contato">Falar com a equipe</a>
       </div>
       <div class="hero-aside">
-        <div class="linha"><b>Resíduo</b>captação estruturada</div>
-        <div class="linha"><b>Composto</b>finos de carvão, mineral e biologia</div>
-        <div class="linha"><b>Derivados</b>produtos de maior valor</div>
-        <div class="linha"><b>Receita</b>caixa rápido e recorrente</div>
+        <div class="linha"><b>Destinação</b>responsabilidade ambiental</div>
+        <div class="linha"><b>Solo</b>carbono e minerais de volta</div>
+        <div class="linha"><b>Lavoura</b>produção mais sustentável</div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="porque" class="alt">
+<section id="oque" class="alt">
   <div class="container">
-    <div class="eyebrow">01 / Por que circular</div>
-    <h2>Resíduo é passivo até virar recurso.</h2>
-    <p class="lead">Quem gera resíduo paga para descartá-lo. Quem transforma esse resíduo em composto e derivados converte um custo em receita, devolvendo carbono e mineral ao solo.</p>
+    <div class="eyebrow">01 / O que fazemos</div>
+    <h2>Resíduo com destino, solo com valor.</h2>
     <div class="grid">
       <div class="card">
-        <div class="num">Para quem gera</div>
-        <h3>Destinação que gera valor</h3>
-        <p>O resíduo deixa de ser um custo de descarte e passa a alimentar uma cadeia produtiva.</p>
+        <div class="num">Destinação de resíduos</div>
+        <h3>Fim do descarte sem valor</h3>
+        <p>Recebemos resíduos orgânicos e os transformamos em insumo, com responsabilidade e rastreabilidade.</p>
       </div>
       <div class="card">
-        <div class="num">Para o solo</div>
-        <h3>Carbono e mineral de volta</h3>
-        <p>O composto devolve ao solo a matéria orgânica e os minerais que o território perdeu.</p>
+        <div class="num">Insumos para o solo</div>
+        <h3>Devolver o que o solo perde</h3>
+        <p>Produzimos compostos e condicionadores que repõem matéria orgânica, carbono e minerais.</p>
       </div>
       <div class="card">
-        <div class="num">Para o negócio</div>
-        <h3>Margem em cada degrau</h3>
-        <p>A mesma base de composto vira produtos de valor crescente, da venda direta ao ativo de carbono.</p>
+        <div class="num">Apoio à lavoura</div>
+        <h3>Ciência aplicada no campo</h3>
+        <p>Diagnóstico e suporte técnico de solo e nutrição, do plantio ao resultado.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="abase">
+<section id="produtos">
   <div class="container">
-    <div class="eyebrow">02 / A base</div>
-    <h2>Composto top premium.</h2>
-    <p class="lead">O ponto de partida gera caixa em semanas, não em anos.</p>
+    <div class="eyebrow">02 / Produtos</div>
+    <h2>O que sai do ciclo.</h2>
     <div class="grid">
       <div class="card">
-        <div class="num">Finos de carvão</div>
-        <h3>Carbono estável</h3>
-        <p>Enriquecem o composto com carbono e estrutura de longa duração.</p>
+        <div class="num">Composto orgânico</div>
+        <h3>Estrutura e fertilidade</h3>
+        <p>Melhora a estrutura do solo, a retenção de água e a disponibilidade de nutrientes.</p>
       </div>
       <div class="card">
-        <div class="num">Remineralizadores</div>
-        <h3>Mix mineral</h3>
-        <p>Pó de rocha e minerais corrigem e nutrem o solo, fechando o ciclo do território.</p>
+        <div class="num">Condicionadores de solo</div>
+        <h3>Mineral e matéria orgânica</h3>
+        <p>Repõem os minerais e a matéria orgânica que o cultivo retira do território.</p>
       </div>
       <div class="card">
-        <div class="num">Biocaldas ativadas</div>
-        <h3>Vida no composto</h3>
-        <p>Fermentados microbianos ativam a biologia e aceleram a maturação.</p>
+        <div class="num">Nutrição vegetal</div>
+        <h3>Fertilizantes de ciclo fechado</h3>
+        <p>Nutrição para as culturas, produzida a partir de materiais que voltam ao sistema.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="escada" class="alt">
+<section id="paraque" class="alt">
   <div class="container">
-    <div class="eyebrow">03 / A escada</div>
-    <h2>Cada degrau agrega margem.</h2>
-    <p class="lead">A mesma base de composto sobe uma escada de produtos de valor crescente.</p>
-    <div class="escada">
-      <div class="degrau">
-        <div class="n">Degrau 1</div>
-        <b>Composto premium</b>
-        <span>Venda direta em R$/t. Receita imediata.</span>
+    <div class="eyebrow">03 / Para quem</div>
+    <h2>Para quem produz e para quem gera.</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="num">Produtores rurais</div>
+        <h3>Lavouras mais férteis</h3>
+        <p>Culturas anuais, fruticultura e agrofloresta que buscam solo mais fértil e produção sustentável.</p>
       </div>
-      <div class="degrau">
-        <div class="n">Degrau 2</div>
-        <b>Derivados líquidos</b>
-        <span>Extração alcalina, neutralização com ácido fosfórico e ureia: fertilizante líquido com N-P-K e húmicos.</span>
+      <div class="card">
+        <div class="num">Indústrias</div>
+        <h3>Resíduo como recurso</h3>
+        <p>Indústrias e agroindústrias que querem dar um destino ambientalmente responsável aos resíduos.</p>
       </div>
-      <div class="degrau">
-        <div class="n">Degrau 3</div>
-        <b>Beneficiados</b>
-        <span>Granulados, organominerais, condicionadores e substratos.</span>
-      </div>
-      <div class="degrau destaque">
-        <div class="n">Degrau 4</div>
-        <b>Camada de carbono</b>
-        <span>Crédito de carbono, biochar e ERW como ativo de longo prazo.</span>
+      <div class="card">
+        <div class="num">Gestores de território</div>
+        <h3>Recuperação e planejamento</h3>
+        <p>Projetos de recuperação de áreas e melhoria da saúde do solo em escala territorial.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="ciclo">
+<section id="quemsomos">
   <div class="container">
-    <div class="eyebrow">04 / O ciclo</div>
-    <h2>Resíduo entra, receita sai.</h2>
-    <div class="fluxo">
-      <div class="etapa"><b>Resíduo</b>captação estruturada</div>
-      <div class="etapa"><b>Composto</b>carvão, mineral e biologia</div>
-      <div class="etapa"><b>Derivados</b>produtos de maior valor</div>
-      <div class="etapa"><b>Receita</b>caixa rápido e recorrente</div>
-      <div class="etapa"><b>Carbono</b>ativo de longo prazo</div>
+    <div class="eyebrow">04 / Quem somos</div>
+    <h2>Ciência, produção e rede.</h2>
+    <p class="lead">A Carbono Circular reúne o conhecimento e a estrutura de um grupo dedicado ao solo e à circularidade.</p>
+    <div class="grupo">
+      <div class="unidade"><b>AnandaVida</b><span>Ciência do solo e atuação no campo.</span></div>
+      <div class="unidade"><b>ArkheAnanda</b><span>Bioeconomia circular e agricultura regenerativa.</span></div>
+      <div class="unidade"><b>Vitrus Ambiental</b><span>Instituto dedicado ao meio ambiente.</span></div>
+      <div class="unidade"><b>Carbono Circular</b><span>O serviço que conecta resíduo, solo e carbono.</span></div>
     </div>
   </div>
 </section>
 
-<section id="carbono" class="escuro">
+<section id="contato" class="alt">
   <div class="container">
-    <div class="eyebrow">05 / A camada de carbono</div>
-    <h2>O valor que fica para depois.</h2>
-    <p class="lead">Sobre a base de produto, a camada de carbono converte a remoção em ativo: crédito de carbono, biochar e intemperismo acelerado (ERW).</p>
-    <div class="carbon-strip">
-      <div class="item"><b>Crédito de carbono</b><span>Mensuração e verificação (MRV) do carbono removido, convertido em ativo negociável.</span></div>
-      <div class="item"><b>Biochar</b><span>Carbono estável no solo por séculos, com dupla saída: produto agronômico e crédito.</span></div>
-      <div class="item"><b>ERW</b><span>Intemperismo acelerado de rocha e escória, com permanência milenar.</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="ecossistema" class="alt">
-  <div class="container">
-    <div class="eyebrow">06 / O ecossistema</div>
-    <h2>Quatro peças, um ciclo.</h2>
-    <div class="ecossistema">
-      <div class="unidade" style="border-color: var(--preto);"><b style="color: var(--preto);">AnandaVida</b><span style="color: var(--cinza);">Ciência e canal agro: produtos e serviços no campo.</span></div>
-      <div class="unidade" style="border-color: var(--preto);"><b style="color: var(--preto);">ArkheAnanda</b><span style="color: var(--cinza);">Motor da circularidade: resíduo vira composto e derivados.</span></div>
-      <div class="unidade" style="border-color: var(--preto);"><b style="color: var(--preto);">Vitrus Ambiental</b><span style="color: var(--cinza);">Instituto: inteligência, redes e legitimidade.</span></div>
-      <div class="unidade" style="border-color: var(--preto);"><b style="color: var(--preto);">Carbono Circular</b><span style="color: var(--cinza);">Camada de carbono: mensura e monetiza o resultado.</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="contato">
-  <div class="container">
-    <div class="eyebrow">07 / Contato</div>
-    <h2>Quanto vale o resíduo do seu território?</h2>
+    <div class="eyebrow">05 / Contato</div>
+    <h2>Vamos conversar sobre o seu resíduo e o seu solo.</h2>
     <a class="btn" href="https://wa.me/5500000000000">Falar pelo WhatsApp</a>
     <div class="contato-bloco">Atendimento: Marcel Beze · ArkheAnanda · Anápolis, Goiás</div>
   </div>
