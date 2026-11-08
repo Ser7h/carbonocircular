@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carbono Circular · Carbono como receita</title>
-<meta name="description" content="Captura, mensuração e monetização de carbono em solo, agro e indústria. Serviço da ArkheAnanda.">
+<title>Carbono Circular · Do resíduo à receita</title>
+<meta name="description" content="Serviço da ArkheAnanda. Transformamos resíduo em composto premium, derivados e ativos de carbono.">
 <style>
   :root {
     --preto: #1a1a1a;
@@ -37,7 +37,7 @@
   h1 { font-size: 3rem; font-weight: normal; line-height: 1.15; margin-bottom: 24px; }
   h2 { font-size: 2rem; font-weight: normal; line-height: 1.2; margin-bottom: 20px; }
   h3 { font-size: 1.2rem; font-weight: bold; margin-bottom: 12px; }
-  .lead { font-size: 1.15rem; color: var(--cinza); max-width: 640px; margin-bottom: 32px; }
+  .lead { font-size: 1.15rem; color: var(--cinza); max-width: 660px; margin-bottom: 32px; }
   p { color: var(--cinza); margin-bottom: 16px; }
   .btn {
     display: inline-block; border: 1px solid var(--preto); padding: 12px 28px;
@@ -50,21 +50,27 @@
   .card { padding: 28px; background: var(--cinza-claro); border: 1px solid var(--linha); }
   .card .num { font-size: 0.8rem; color: var(--cinza); letter-spacing: 0.1em; margin-bottom: 14px; }
 
+  .escada { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 28px; }
+  .degrau { border-top: 2px solid var(--preto); padding-top: 16px; }
+  .degrau .n { font-size: 0.8rem; color: var(--cinza); letter-spacing: 0.1em; margin-bottom: 10px; }
+  .degrau b { display: block; margin-bottom: 8px; }
+  .degrau span { font-size: 0.85rem; color: var(--cinza); }
+
   .fluxo { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-top: 28px; }
-  .fluxo .etapa { border-top: 2px solid var(--preto); padding-top: 14px; font-size: 0.9rem; }
-  .fluxo .etapa b { display: block; margin-bottom: 6px; }
+  .etapa { border-top: 2px solid var(--preto); padding-top: 14px; font-size: 0.9rem; }
+  .etapa b { display: block; margin-bottom: 6px; }
 
   .ecossistema { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 28px; }
-  .ecossistema .unidade { border-left: 2px solid var(--preto); padding-left: 16px; }
-  .ecossistema .unidade b { display: block; margin-bottom: 6px; }
-  .ecossistema .unidade span { font-size: 0.85rem; color: var(--cinza); }
+  .unidade { border-left: 2px solid var(--preto); padding-left: 16px; }
+  .unidade b { display: block; margin-bottom: 6px; }
+  .unidade span { font-size: 0.85rem; color: var(--cinza); }
 
   footer { padding: 48px 0; font-size: 0.85rem; color: var(--cinza); }
   footer .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
 
   @media (max-width: 820px) {
     h1 { font-size: 2.2rem; }
-    .grid, .ecossistema { grid-template-columns: 1fr; }
+    .grid, .ecossistema, .escada { grid-template-columns: 1fr; }
     .fluxo { grid-template-columns: 1fr; }
     .nav-links { display: none; }
   }
@@ -76,8 +82,8 @@
   <div class="container nav">
     <div class="logo">Carbono Circular</div>
     <nav class="nav-links">
-      <a href="#oque">O que é</a>
-      <a href="#rotas">Rotas</a>
+      <a href="#abase">A base</a>
+      <a href="#escada">A escada</a>
       <a href="#ciclo">O ciclo</a>
       <a href="#ecossistema">Ecossistema</a>
       <a href="#contato">Contato</a>
@@ -87,40 +93,63 @@
 
 <section id="inicio">
   <div class="container">
-    <div class="eyebrow">Serviço da ArkheAnanda</div>
-    <h1>Transformar o carbono em receita.</h1>
-    <p class="lead">Captura, mensuração e monetização de carbono em solo, agro e indústria, por rotas de remoção durável.</p>
+    <div class="eyebrow">Serviço da ArkheAnanda · Bioeconomia Circular</div>
+    <h1>Do resíduo à receita.</h1>
+    <p class="lead">Transformamos resíduo em composto premium, derivados e ativos de carbono. Receita rápida na base, valor de longo prazo na camada de carbono.</p>
     <a class="btn" href="#contato">Falar com a equipe</a>
   </div>
 </section>
 
-<section id="oque">
+<section id="abase">
   <div class="container">
-    <div class="eyebrow">01 / O que é</div>
-    <h2>A camada de carbono da ArkheAnanda.</h2>
-    <p class="lead">A Carbono Circular mede, verifica e converte em receita o carbono removido pelas operações da ArkheAnanda, da AnandaVida e do instituto Vitrus Ambiental. Não fabrica nem aplica: monetiza o resultado.</p>
+    <div class="eyebrow">01 / A base</div>
+    <h2>Composto top premium.</h2>
+    <p class="lead">O ponto de partida é um composto de valor superior, que gera caixa em semanas e não em anos.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="num">Finos de carvão</div>
+        <h3>Carbono estável</h3>
+        <p>Finos de carvão enriquecem o composto com carbono e estrutura de longa duração.</p>
+      </div>
+      <div class="card">
+        <div class="num">Remineralizadores</div>
+        <h3>Mix mineral</h3>
+        <p>Pó de rocha e minerais corrigem e nutrem o solo, fechando o ciclo do território.</p>
+      </div>
+      <div class="card">
+        <div class="num">Biocaldas ativadas</div>
+        <h3>Vida no composto</h3>
+        <p>Fermentados microbianos que ativam a biologia e aceleram a maturação.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="rotas">
+<section id="escada">
   <div class="container">
-    <div class="eyebrow">02 / Rotas de remoção (CDR)</div>
-    <h2>Três caminhos para o mesmo ativo.</h2>
-    <div class="grid">
-      <div class="card">
-        <div class="num">Biochar · CDR biológico</div>
-        <h3>Carbono estável no solo</h3>
-        <p>Resíduo orgânico vira biochar por pirólise: carbono fixado por séculos, com valor agronômico e climático.</p>
+    <div class="eyebrow">02 / A escada</div>
+    <h2>Cada degrau agrega margem.</h2>
+    <p class="lead">A mesma base de composto vira produtos de valor crescente.</p>
+    <div class="escada">
+      <div class="degrau">
+        <div class="n">Degrau 1</div>
+        <b>Composto premium</b>
+        <span>Venda direta em R$/t. Receita imediata.</span>
       </div>
-      <div class="card">
-        <div class="num">ERW · CDR mineral</div>
-        <h3>Intemperismo acelerado</h3>
-        <p>Rocha silicática e escória reagem com o CO2 e precipitam carbono mineral, com permanência milenar.</p>
+      <div class="degrau">
+        <div class="n">Degrau 2</div>
+        <b>Derivados líquidos</b>
+        <span>Extração alcalina, neutralização com ácido fosfórico e ureia: fertilizante líquido com N-P-K e húmicos.</span>
       </div>
-      <div class="card">
-        <div class="num">ALM · CDR no manejo</div>
-        <h3>Gestão do solo e regeneração</h3>
-        <p>Diagnóstico e manejo que aumentam o carbono do solo e abrem a relação com o produtor.</p>
+      <div class="degrau">
+        <div class="n">Degrau 3</div>
+        <b>Beneficiados</b>
+        <span>Granulados, organominerais, condicionadores e substratos.</span>
+      </div>
+      <div class="degrau">
+        <div class="n">Degrau 4</div>
+        <b>Camada de carbono</b>
+        <span>Crédito de carbono, biochar e ERW como ativo de longo prazo.</span>
       </div>
     </div>
   </div>
@@ -129,13 +158,13 @@
 <section id="ciclo">
   <div class="container">
     <div class="eyebrow">03 / O ciclo</div>
-    <h2>Do resíduo à receita.</h2>
+    <h2>Resíduo entra, receita sai.</h2>
     <div class="fluxo">
-      <div class="etapa"><b>Resíduo</b>Origem de biomassa e mineral</div>
-      <div class="etapa"><b>Remoção</b>Biochar, rocha, manejo</div>
-      <div class="etapa"><b>Mensuração</b>MRV com rigor técnico</div>
-      <div class="etapa"><b>Crédito</b>Certificação do ativo</div>
-      <div class="etapa"><b>Receita</b>Venda e remuneração do ciclo</div>
+      <div class="etapa"><b>Resíduo</b>Captação estruturada</div>
+      <div class="etapa"><b>Composto</b>Finos de carvão, mineral e biologia</div>
+      <div class="etapa"><b>Derivados</b>Produtos de maior valor</div>
+      <div class="etapa"><b>Receita</b>Caixa rápido e recorrente</div>
+      <div class="etapa"><b>Carbono</b>Ativo de longo prazo</div>
     </div>
   </div>
 </section>
@@ -146,9 +175,9 @@
     <h2>Quatro peças, um ciclo.</h2>
     <div class="ecossistema">
       <div class="unidade"><b>AnandaVida</b><span>Ciência e canal agro: produtos e serviços no campo.</span></div>
-      <div class="unidade"><b>ArkheAnanda</b><span>Motor da circularidade: resíduo vira biochar, composto e mineral.</span></div>
+      <div class="unidade"><b>ArkheAnanda</b><span>Motor da circularidade: resíduo vira composto e derivados.</span></div>
       <div class="unidade"><b>Vitrus Ambiental</b><span>Instituto: inteligência, redes e legitimidade.</span></div>
-      <div class="unidade"><b>Carbono Circular</b><span>Camada de carbono: MRV, crédito e serviço de CDR.</span></div>
+      <div class="unidade"><b>Carbono Circular</b><span>Camada de carbono: mensura e monetiza o resultado.</span></div>
     </div>
   </div>
 </section>
@@ -156,7 +185,7 @@
 <section id="contato">
   <div class="container">
     <div class="eyebrow">05 / Contato</div>
-    <h2>Quanto vale o carbono do seu território?</h2>
+    <h2>Quanto vale o resíduo do seu território?</h2>
     <a class="btn" href="https://wa.me/5575999342652">Falar pelo WhatsApp</a>
   </div>
 </section>
