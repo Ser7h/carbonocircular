@@ -35,6 +35,12 @@ Em 09/11/2026 às 10h22min20s, horário da Bahia (UTC−3), os testes fizeram re
 
 A abertura de `https://www.carbonocircular.com.br/` também foi confirmada no Chrome. O navegador exibiu a página no endereço principal `https://carbonocircular.com.br/`.
 
+## Deploy do commit 52e6758
+
+Em 09/11/2026 às **10h39min12s, horário da Bahia (13h39min12s UTC)**, o GitHub Pages registrou a publicação do commit [`52e6758`](https://github.com/Ser7h/carbonocircular/commit/52e6758d287d8c9a7df2910ac62f0934cc78cf4a) da branch `main` no ambiente `github-pages`. As etapas de build e deploy terminaram com sucesso. [Execução 42627175139 no GitHub Actions](https://github.com/Ser7h/carbonocircular/actions/runs/42627175139)
+
+Após o deploy, às **10h40min39s** do mesmo dia, o acesso direto a `https://carbonocircular.com.br/` retornou `200 OK`. Tanto `https://www.carbonocircular.com.br/` quanto `http://carbonocircular.com.br/` retornaram `301 Moved Permanently` e redirecionaram em um único salto para `https://carbonocircular.com.br/`, que respondeu `200 OK`. Os três acessos exibiram a página **Carbono Circular · Do resíduo ao solo fértil**. O certificado passou na validação TLS para a raiz e para `www`, e o Pages manteve o HTTPS obrigatório (`https_enforced: true`).
+
 ## Comandos de conferência
 
 No PowerShell, os comandos abaixo consultam os dois servidores DNS e exibem o estado do certificado e do HTTPS obrigatório no GitHub Pages.
