@@ -41,6 +41,12 @@ Em 09/11/2026 às **10h39min12s, horário da Bahia (13h39min12s UTC)**, o GitHub
 
 Após o deploy, às **10h40min39s** do mesmo dia, o acesso direto a `https://carbonocircular.com.br/` retornou `200 OK`. Tanto `https://www.carbonocircular.com.br/` quanto `http://carbonocircular.com.br/` retornaram `301 Moved Permanently` e redirecionaram em um único salto para `https://carbonocircular.com.br/`, que respondeu `200 OK`. Os três acessos exibiram a página **Carbono Circular · Do resíduo ao solo fértil**. O certificado passou na validação TLS para a raiz e para `www`, e o Pages manteve o HTTPS obrigatório (`https_enforced: true`).
 
+## Deploy do commit 62f27cc
+
+Em 09/11/2026 às **10h41min59s, horário da Bahia (13h41min59s UTC)**, o GitHub Pages concluiu com sucesso o deploy do commit [`62f27cc`](https://github.com/Ser7h/carbonocircular/commit/62f27cceb86b70351928b0ce787e4f39b5f164c5) da branch `main` no ambiente `github-pages`. [Execução 42627669685 no GitHub Actions](https://github.com/Ser7h/carbonocircular/actions/runs/42627669685)
+
+Às **10h42min33s**, horário da Bahia, `https://carbonocircular.com.br/` respondeu diretamente com `200 OK`. O acesso a `https://www.carbonocircular.com.br/` retornou `301 Moved Permanently` com destino a `https://carbonocircular.com.br/`. Após esse único redirecionamento, a raiz respondeu `200 OK` e exibiu **Carbono Circular · Do resíduo ao solo fértil**. A validação TLS passou nos dois endereços e o GitHub Pages confirmou o HTTPS obrigatório (`https_enforced: true`).
+
 ## Comandos de conferência
 
 No PowerShell, os comandos abaixo consultam os dois servidores DNS e exibem o estado do certificado e do HTTPS obrigatório no GitHub Pages.
