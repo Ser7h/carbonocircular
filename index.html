@@ -72,6 +72,13 @@
   .contato-bloco { margin-top: 32px; font-size: 1rem; color: var(--cinza); }
   .fig { margin: 44px 0; }
   .fig img { width: 100%; height: auto; display: block; }
+  .btn.ghost { border-color: transparent; padding: 14px 8px; color: var(--verde); }
+  .btn.ghost:hover { background: transparent; color: var(--verde-escuro); text-decoration: underline; }
+  .cta { background: var(--verde-escuro); padding: 84px 0; text-align: center; }
+  .cta h2 { color: var(--branco); margin-bottom: 16px; }
+  .cta p { color: rgba(255,255,255,0.85); max-width: 560px; margin: 0 auto 34px; }
+  .cta .btn { border-color: var(--branco); color: var(--branco); }
+  .cta .btn:hover { background: var(--branco); color: var(--verde-escuro); }
 
   footer { padding: 56px 0; border-top: 1px solid var(--linha); font-size: 0.85rem; color: var(--cinza); }
   footer .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 18px; }
@@ -104,10 +111,11 @@
   <div class="container">
     <div class="hero-grid">
       <div>
-        <div class="eyebrow">Serviço da ArkheAnanda</div>
+        <div class="eyebrow">Serviço da ArkheAnanda · Anápolis, Goiás</div>
         <h1>Do resíduo ao solo fértil.</h1>
-        <p class="lead">Destinamos resíduos com responsabilidade e produzimos insumos que devolvem carbono e minerais ao solo, para uma agricultura mais produtiva e sustentável.</p>
-        <a class="btn" href="#contato">Falar com a equipe</a>
+        <p class="lead">Recebemos resíduos e devolvemos ao solo o que ele perde — carbono e minerais. Para você, mais produtividade na lavoura e destino responsável para o descarte.</p>
+        <a class="btn" href="https://wa.me/556296950868?text=Ol%C3%A1%2C%20cheguei%20pelo%20site%20da%20Carbono%20Circular.">Falar com a equipe</a>
+        <a class="btn ghost" href="#oque">Conhecer o serviço</a>
       </div>
       <div class="hero-aside">
         <div class="linha"><b>Destinação</b>responsabilidade ambiental</div>
@@ -191,6 +199,14 @@
         <p>Projetos de recuperação de áreas e melhoria da saúde do solo em escala territorial.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Pronto para devolver valor ao seu solo?</h2>
+    <p>Fale com a equipe e encontre o melhor caminho — para o seu resíduo ou para a sua lavoura.</p>
+    <a class="btn" href="https://wa.me/556296950868?text=Ol%C3%A1%2C%20cheguei%20pelo%20site%20da%20Carbono%20Circular.">Falar pelo WhatsApp</a>
   </div>
 </section>
 
